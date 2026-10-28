@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form input 연습용</title>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7/css/materialdesignicons.min.css" />
+    <style>
+        .icon_mdi_search {
+            display: inline-flex;
+            width: 24px;
+            height: 24px;
+            background: currentColor;
+            mask: url('https://api.iconify.design/mdi/search.svg') no-repeat center / contain;
+            -webkit-mask: url('https://api.iconify.design/mdi/search.svg') no-repeat center / contain;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./form04.css">
+
+</head>
+
+<body>
+    <main class="wrap">
+        <section class="card search_card">
+            <h2>검색</h2>
+            <form method="get" class="search_form">
+                <label for="search" class="blind">검색어 입력</label>
+                <input type="search" id="search">
+
+                <button type="submit">
+                    <span class="icon_mdi_search" aria-hidden="true"></span>
+                </button>
+            </form>
+
+
+        </section>
+
+        <section class="card">
+            <form method="post" class="info_form">
+                <fieldset class="login_fieldset">
+                    <legend>로그인</legend>
+                    <input type="hidden" value="서버로 넘길 것">
+
+                    <div class="form_group">
+                        <label>
+                            아이디 <input type="text" placeholder="아이디 입력" value="기본아이디" size="5">
+                        </label>
+                    </div>
+
+                    <div class="form_group">
+                        <label>비밀번호 <input type="password" value="" maxlength="10"></label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>추가정보</legend>
+                    <div class="form_group">
+                        <label for="add">웹주소</label>
+                        <input type="url" id="add" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="maill">메일 주소</label>
+                        <input type="email" id="mail">
+                    </div>
+
+                    <div class="form_group">
+                        <label for="phone">전화번호</label>
+                        <input type="tel" id="phone">
+                    </div>
+                </fieldset>
+
+                <div class="btn_area">
+                    <input type="submit" value="전송" class="btn submit_btn">
+                    <input type="image" src="../09form/css/btn.png" alt="submit">
+                    <input type="reset" value="다시입력" class="btn reset_btn">
+                </div>
+</form>
+        </section>
+
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 500px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.container ul{
+    padding: 50px;
+    border: 5px dotted #1a1a1a;
+    background-color: lightcoral;
+}
+/* ul list-style 다 다르게 */
+.con1 ul{ 
+    list-style: circle;
+}
+.con2 ul{
+    list-style: decimal-leading-zero inside;
+}
+.con3 ul{
+    list-style: lower-alpha;
+}
+.con4 ul{
+    list-style-type: square;
+}
+
+
+/* h2 폰트 다 다르게 / 백그라운드 컬러 다 다르게 / 폰트 컬러 선택 */
+.con1>h2{ 
+    font-family:"Nanum Myeongjo", serif;
+    background-color: #ccc;
+    color: rgb(58, 35, 5);}
+
+.con2>h2{
+      font-family: "Do Hyeon", sans-serif;
+    background-color: antiquewhite;
+    color: plum;
+}
+
+.con3>h2{
+      font-family: "Song Myung", serif;
+    background-color: rgb(127, 255, 212);
+    color: beige;
+}
+
+.con4>h2{
+      font-family: "Gasoek One", sans-serif;
+    background-color: plum;
+    color: purple;
+}

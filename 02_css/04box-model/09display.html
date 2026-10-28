@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        *{
+            margin: 0;
+            padding: o;
+        }
+        div{
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        img{
+            width: 300px;
+        }
+        #inline img:nth-child(2){
+            visibility: hidden;
+        }
+        #block img{
+            display: block;
+        }
+         #block img:nth-child(2){
+            display: none;
+         }
+         ul{
+            width: 500px;
+            margin: 0 auto;
+            background: #ccc;
+         }
+         li{
+            background: khaki;
+            width: 100px;
+            display: inline;
+            display: inline-block;
+         }
+         a{
+            color: inherit;
+            text-decoration: none;
+            background: lightcoral;
+         }
+    </style>
+</head>
+
+<body>
+    <div id="inline">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIIJz6y77gEkyUayYMizXjX8KuqLEcQSvkyGK1MYqmIA&s=10"
+            alt="정재현"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIIJz6y77gEkyUayYMizXjX8KuqLEcQSvkyGK1MYqmIA&s=10"
+            alt="정재현"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIIJz6y77gEkyUayYMizXjX8KuqLEcQSvkyGK1MYqmIA&s=10"
+            alt="정재현"><img>
+           
+    </div>
+    <div id="block">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIIJz6y77gEkyUayYMizXjX8KuqLEcQSvkyGK1MYqmIA&s=10"
+            alt="정재현"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIIJz6y77gEkyUayYMizXjX8KuqLEcQSvkyGK1MYqmIA&s=10"
+            alt="정재현"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIIJz6y77gEkyUayYMizXjX8KuqLEcQSvkyGK1MYqmIA&s=10"
+            alt="정재현"><img>
+          
+    </div>
+    <nav>
+        <ul>
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴2</a></li>
+            <li><a href="">메뉴3</a></li>
+            <li><a href="">메뉴4</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input 태그속성</title>
+    <style>
+        em {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <ul>
+            <li>
+                <label for="uid">이름</label>
+                <input type="text" id="uid" autofocus>
+            </li>
+            <li>
+                <label for="subj">학번</label>
+                <input type="number" id="subj" placeholder="하이픈 없이 입력">
+
+            </li>
+            <li>
+                <label for="read">읽기만함</label>
+                <input type="text" id="read" value="못쳐요" readonly>
+            </li>
+            <li>
+                <label for="uname"><em>*</em>닉네임</label>
+                <input type="text" id="uname" required>
+            </li>
+            <li>
+            
+                <input type="submit" value="전송">
+            </li>
+        </ul>
+    </form>
+</body>
+
+</html>

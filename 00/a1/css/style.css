@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    /* width: 1200px; */
+    height: 100px;
+    background: #fff;
+    border: 1px solid #333;
+}
+
+header h1 {
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: #333;
+    position: relative;
+    /* background: #ccc; */
+
+}
+
+header nav {
+    float: right;
+    background: #fff;
+    width: 70%;
+    margin-top: 30px;
+
+}
+
+header nav ul.gnb>li {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+header nav ul.gnb>li>a {
+    height: 40px;
+    line-height: 40px;
+    display: block;
+}
+
+section.img_slide {
+    /* width: 1200px; */
+    height: 300px;
+    background: #ccc;
+    text-align: center;
+    border: 1px solid;
+
+}
+
+section.img_slide h2 {
+    line-height: 300px;
+}
+
+section.contents {
+    /* width: 1200px; */
+    height: 200px;
+    background: #fff;
+    text-align: center;
+    border: 1px solid;
+
+}
+
+
+section.contents article {
+    border: 1px solid #333;
+    width: 33.33%;
+    height: 200px;
+    float: left;
+    text-align: center;
+    line-height: 200px;
+    background: #FFF;
+    font-weight: bold;
+}
+
+footer {
+
+    height: 100px;
+    background: #fff;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    border-right: 1px solid;
+    box-sizing: border-box;
+
+
+
+}
+
+footer .logo {
+    width: 20%;
+    height: 100px;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+    background: #FFF;
+    font-weight: bold;
+
+    background: red;
+
+}
+
+footer .copy {
+    width: 60%;
+    height: 100px;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+    background: #FFF;
+    font-weight: bold;
+
+    background: goldenrod;
+}
+
+footer .sns {
+    width: 20%;
+    height: 100px;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    background: yellow;
+}
