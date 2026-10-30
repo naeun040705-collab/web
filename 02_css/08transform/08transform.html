@@ -27,7 +27,7 @@
             top: 0;
             transition: .6s;
             transform-style: preserve-3d;
-            transform-origin: top;
+            transform-origin: top center;
         }
 
         .con:hover .card {
@@ -43,6 +43,8 @@
             position: absolute;
             left: 0;
             top: 0;
+            backface-visibility: hidden;
+
         }
 
         .face img {
@@ -53,7 +55,6 @@
 
         .back {
             transform: rotateX(180deg);
-            backface-visibility: hidden;
         }
     </style>
 </head>
