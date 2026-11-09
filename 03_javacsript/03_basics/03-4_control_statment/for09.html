@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <select>
+    <option value="2026">2026년도</option>
+    <option value="2025">2025년도</option>
+    <option value="2024">2024년도</option>
+    1900년도까지
+  </select>
+
+  <script>
+    document.write('<select>');
+    for (let z = 1900; z >= 2026; z--) {
+                
+                document.write( `option value = "${z}" > ${z}년도 </option>`);
+                }
+                document.write('<select>');
+            
+  </script>
+</body>
+</html>

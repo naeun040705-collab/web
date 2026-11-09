@@ -21,26 +21,22 @@
             /*
          5의배수 이면서 7의 배수가 아닌것 red
          5의 배수가 아니면서 7의 배수 green
-         5의배수 이면서 7의배수 일때 aqua
+         5의배수 이면서 7의배수 일때 blue
          그외 p태그로
     */
-   const num = Number(prompt)
-                  if(num ){
-            grade = 'A';
-        }else if(avg>=80){
-            grade = 'B';
+            if(i %5 ==0 && i %7 !=0) {
+                document.write('<p class="red">' +  i  + '</p>')
 
-        }else if(avg>=70){
-            grade = 'C';
-            
-        }else if(avg>=60){
-            grade = 'D';
-            
-        }else {
-            grade = 'F';
+            }else if(i % 5 != 0 && i % 7 ==0){
+                document.write('<p class="green">' +  i  + '</p>')
+                
+            }else if(i % 5 ==0 && i %7 ==0){
+                document.write('<p class="blue">' +  i  + '</p>')
 
-        }
-        
+            }else{
+                document.write('<p>' +  i  + '</p>')
+            }
+
         }
     </script>
 </body>
