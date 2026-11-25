@@ -1,5 +1,5 @@
 @charset "utf-8";
-@media screen and (max-width: 1640px) {
+@media screen and (max-width:1640px) {
     .inner {
         width: min(1600px, calc(100% - 40px));
     }
@@ -10,7 +10,7 @@
     }
 
     .motion .tit b,
-    .motion .tit b h2 {
+    .motion .tit h2 {
         font-size: 4rem;
     }
 
@@ -19,8 +19,12 @@
         margin-right: -550px;
     }
 
+    .contact .inner {
+        height: 150px;
+    }
+
     .contact .inner article {
-        padding: 16px 16px;
+        padding: 0px 16px;
         border-radius: 16px;
     }
 
@@ -28,7 +32,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 0.5rem;
+        gap: .5rem;
     }
 
     .contact .inner article h3 {
@@ -37,7 +41,7 @@
     }
 
     .contact .inner article p {
-        font-size: 0.8rem;
+        font-size: .8rem;
     }
 
     footer {
@@ -52,7 +56,6 @@
     footer .f_bottom {
         margin-top: 40px;
     }
-
 }
 
 @media screen and (max-width:1280px) {
@@ -71,7 +74,7 @@
     }
 
     :root {
-        --round: 16px
+        --ronud: 16px;
     }
 
     header .inner {
@@ -103,6 +106,7 @@
         width: 100%;
         margin: 0;
         border: 0;
+        padding-inline: 1vw;
     }
 
     header .container .all_con ul.list>li:last-child {
@@ -117,6 +121,9 @@
         justify-content: space-between;
         padding-inline: 20px;
     }
+    header .container .all_con ul.list>li.on button{
+        border-bottom: 1px solid var(--gray-06);
+    }
 
     header .container .all_con ul.list>li button::before {
         content: '>';
@@ -130,8 +137,7 @@
     }
 
     header .container .all_con ul.list>li.on button::before {
-        transform: rotate(90deg) scaleY(1.4);
-
+        transform: rotate(-90deg) scaleY(1.4);
     }
 
     header .container .all_con ul.list>li:hover button::before {
@@ -147,15 +153,17 @@
 
     header .container .all_con ul.list>li.on ul {
         display: block;
+        padding: 3vw 20px 2vw;
+        border-bottom: 1px solid var(--gray-06);
+
     }
 
-    /* main - visual */
+    /* main_visual */
     .main_visual {
-        height: 100vh;
-        padding-top: 100px;
+        padding-top: 64px;
     }
 
-    .txt_area .txt {
+    .txt_area .tit {
         font-size: 42px;
     }
 
@@ -173,26 +181,23 @@
 
     .article_bottom .box em {
         font-size: 16px;
-
     }
 
     .article_bottom .box p {
         font-size: 40px;
-        font-weight: 500;
-        line-height: 1.1;
         width: 180px;
     }
 
     .article_bottom .box .txt_b {
-        left: 36px;
-    }
-
-    .article_bottom .box3:hover .txt_b {
-        transform: translateY(0);
+        left: 36px
     }
 
     .article_bottom .box:hover .txt_b {
         transform: translateY(102px);
+    }
+
+    .article_bottom .box3:hover .txt_b {
+        transform: translateY(0);
     }
 
     .article_bottom .box .txt_b span {
@@ -215,7 +220,6 @@
     .article_bottom .box_all>div {
         display: block;
         height: auto;
-
     }
 
     .article_bottom .box2 img {
@@ -244,10 +248,7 @@
     .article_bottom .box5 img {
         right: 40px;
         transform: translateY(0);
-        bottom: 0;
         width: 150px;
-
-
     }
 
     .motion {
@@ -271,7 +272,6 @@
     .learning ul li {
         height: 110px;
         margin-bottom: 20px;
-
     }
 
     .learning ul li:hover img {
@@ -289,7 +289,7 @@
     }
 
     .con {
-        padding-top: 0;
+        padding: 0;
     }
 
     .con .inner {
@@ -310,24 +310,24 @@
         display: none;
     }
 
-    .content {
-        padding-bottom: 70px;
+    .contents {
+        padding-top: 70px;
     }
 
-    .content .swiper {
+    .contents .swiper {
         height: 380px;
         padding-bottom: 50px;
     }
 
-    .content .swiper .box {
+    .contents .swiper .box {
         width: 320px;
     }
 
-    .content .swiper .box .txt_box em {
+    .contents .swiper .box .txt_box em {
         font-size: 14px;
     }
 
-    .content .swiper .box .txt_box p {
+    .contents .swiper .box .txt_box p {
         font-size: 18px;
         margin-bottom: 30px;
         white-space: nowrap;
@@ -335,32 +335,30 @@
         text-overflow: ellipsis;
     }
 
-    .content .swiper .box .txt_box span {
+    .contents .swiper .box .txt_box span {
         font-size: 13px;
     }
 
     .blog .swiper {
         height: 360px;
         padding-bottom: 50px;
-
     }
 
     .blog .swiper .box {
         width: 320px;
-
     }
 
     .blog .swiper .box .img_box {
-        padding: 24px;
-
+        height: 184px;
+        flex-shrink: 0;
     }
 
     .blog .swiper .box .txt_box {
-        padding: 30px 24px;
+        padding: 24px;
     }
 
     .blog .swiper .box .txt_box em {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .blog .swiper .box .txt_box p {
@@ -406,7 +404,6 @@
     .contact .inner article {
         padding: 32px;
         flex-basis: 124px;
-
     }
 
     .contact .inner article a {
@@ -422,7 +419,7 @@
     }
 }
 
-@media screen and(max-sidth:1024px) {
+@media screen and (max-width:1024px) {
     header .right a {
         display: none;
     }
@@ -431,14 +428,11 @@
         height: calc(100vh - 64px);
         min-height: 500px;
         max-height: 744px;
-
     }
 
     .main_visual .swiper li .txt_area {
-
         height: 100%;
         padding: 80px 0 80px 80px;
-
     }
 
     .info {
@@ -450,10 +444,9 @@
     }
 
     .article_top .slide {
-
         width: 100%;
         height: 100%;
-        min-width: 32px;
+        min-height: 32px;
         overflow: hidden;
     }
 
@@ -480,10 +473,9 @@
     .curriculum p {
         margin-bottom: 0;
         font-size: 2.5vw;
-
     }
 
-    .curriculum .span {
+    .curriculum span {
         display: none;
     }
 
@@ -510,42 +502,174 @@
         font-size: 1rem;
         max-width: 100%;
     }
-    footer .f_top .logo_box .logo_b{
+
+    footer .f_top .logo_box .logo_b {
         max-width: 100%;
         gap: 16px;
         font-size: .75rem;
         flex-wrap: wrap;
     }
-    ooter .f_top .btn_box{
+
+    footer .f_top .btn_box {
         max-width: 100%;
         gap: 8px;
-        flex-wrap: wrap;
         height: auto;
+        flex-wrap: wrap;
         align-items: center;
     }
+
     .sns a {
         width: 36px;
         height: 36px;
     }
-     .sns a img{
+
+    .sns a img {
         width: 50%;
-     }
-     .select_box{
+    }
+
+    .select_box {
         width: 132px;
         height: 36px;
-     }
-     .select_box button{
+    }
+
+    .select_box button {
         font-size: 13px;
         white-space: nowrap;
-     }
-     .top a {
+    }
+
+    .top a {
         width: 80px;
         height: 36px;
-        font-size: 12px;
+        font-size: 13px;
         padding: 0 12px;
-     }
-     footer .f_bottom{
+    }
+
+    footer .f_bottom {
         margin-top: 24px;
         font-size: 12px;
-     }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main_visual {
+        height: 100vh;
+        min-height: 100vh;
+        max-height: 100vh;
+    }
+
+    .main_visual .swiper li {
+        align-items: center;
+    }
+
+    .main_visual .swiper li .txt_area {
+        height: 80%;
+        padding: 40px;
+    }
+
+    .txt_area .sub_txt {
+        font-size: 2.6vw;
+    }
+
+    .txt_area .tit {
+        font-size: 5.5vw;
+    }
+
+    .txt_area .txt {
+        font-size: 2.75vw;
+        line-height: 1.4;
+    }
+
+    main .more {
+        height: auto;
+        padding: 14px 30px;
+        font-size: clamp(2.8vw, 1rem, 3vw);
+    }
+
+    .main_visual .pager {
+        height: 6vh;
+        font-size: 12px;
+        padding-bottom: 1vh;
+    }
+
+    .main_visual .pager button {
+        font-size: 2rem;
+    }
+
+    .article_top {
+        height: 6vw;
+        padding: 6vw 4vw;
+    }
+
+    .article_top .slide .swiper li a {
+        font-size: 3vw;
+        gap: 10px;
+        padding-inline: 1vw;
+    }
+
+    .article_top .slide .swiper li a .txt {
+        flex: 1;
+    }
+
+    .article_top .slide .swiper li a .day {
+        display: none;
+    }
+
+    .article_bottom {
+        margin-top: 5vh;
+        padding-inline: 0;
+    }
+
+    .learning,
+    .con .inner,
+    .curriculum,
+    .contact .inner {
+        padding-inline: 0;
+    }
+
+    .curriculum .inner a {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .curriculum .inner a .txt_box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .curriculum p {
+        font-size: 3vw;
+    }
+
+    .curriculum .list_box {
+        width: 100%;
+        height: auto;
+    }
+
+    .curriculum .list_box li {
+        height: 34px;
+    }
+
+    footer .f_top{
+        flex-direction: column;
+        gap: 24px;
+    }
+    footer .f_top .logo_box{
+        order: 2;
+    }
+    footer .f_top .btn_box{
+        order: 1;
+    }
+    footer .f_top .btn_box .top{
+        margin-left: auto;
+    }
+    footer .f_bottom{
+        flex-direction: column;
+    }
+    footer .f_bottom .f_con1 span:nth-of-type(1){
+        padding-inline-start: 0;
+    }
+    footer .f_bottom .copy{
+        text-align: right;
+    }
+
 }
